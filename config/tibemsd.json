@@ -1,0 +1,138 @@
+{
+	"acls":	[],
+	"bridges":	[],
+	"channels":	[],
+	"displayName":	"DEV",
+	"durables":	[],
+	"emsca":	{
+		"advanced":	[],
+		"emsca_listens":	[{
+				"url":	"tcp://localhost:7222"
+			}]
+	},
+	"factories":	[{
+			"jndinames":	[],
+			"name":	"QueueConnectionFactory",
+			"ssl":	{
+				"ssl_issuer_list":	[],
+				"ssl_trusted_list":	[]
+			},
+			"type":	"queue",
+			"url":	"tcp://localhost:7222"
+		}, {
+			"jndinames":	[],
+			"name":	"TopicConnectionFactory",
+			"ssl":	{
+				"ssl_issuer_list":	[],
+				"ssl_trusted_list":	[]
+			},
+			"type":	"topic",
+			"url":	"tcp://localhost:7222"
+		}, {
+			"jndinames":	[],
+			"multicast_enabled":	false,
+			"name":	"GenericConnectionFactory",
+			"ssl":	{
+				"ssl_issuer_list":	[],
+				"ssl_trusted_list":	[]
+			},
+			"url":	"tcp://localhost:7222"
+		}],
+	"groups":	[{
+			"description":	"Administrators",
+			"members":	[{
+					"name":	"admin"
+				}, {
+					"name":	""
+				}],
+			"name":	"$admin"
+		}],
+	"model_version":	"1.0",
+	"queues":	[],
+	"routes":	[],
+	"stores":	[{
+			"file":	"/tibco/config/store/meta.db",
+			"file_crc":	false,
+			"mode":	"async",
+			"name":	"$sys.meta",
+			"type":	"file"
+		}, {
+			"file":	"/tibco/config/store/async-msgs.db",
+			"file_crc":	false,
+			"mode":	"async",
+			"name":	"$sys.nonfailsafe",
+			"type":	"file"
+		}, {
+			"file":	"/tibco/config/store/sync-msgs.db",
+			"file_crc":	false,
+			"mode":	"sync",
+			"name":	"$sys.failsafe",
+			"type":	"file"
+		}],
+	"tibemsd":	{
+		"authorization":	false,
+		"console_trace":	null,
+		"detailed_statistics":	"NONE",
+		"flow_control":	false,
+		"ft_activation":	null,
+		"ft_active":	null,
+		"ft_heartbeat":	null,
+		"ft_reconnect_timeout":	null,
+		"ft_ssl":	{
+			"ssl_ciphers":	null,
+			"ssl_expected_hostname":	null,
+			"ssl_identity":	null,
+			"ssl_issuer_list":	[],
+			"ssl_password":	null,
+			"ssl_private_key":	null,
+			"ssl_trusted_list":	[],
+			"ssl_verify_host":	null,
+			"ssl_verify_hostname":	null
+		},
+		"jre_options":	[],
+		"log_trace":	null,
+		"logfile":	"/tibco/config/logs/logfile",
+		"logfile_max_size":	null,
+		"max_connections":	0,
+		"max_msg_memory":	"512MB",
+		"max_stat_memory":	"64MB",
+		"msg_swapping":	true,
+		"multicast":	false,
+		"password":	null,
+		"primary_listens":	[{
+				"ft_active":	false,
+				"url":	"tcp://localhost:7222"
+			}],
+		"rate_interval":	3,
+		"server":	"DEV",
+		"server_rate_interval":	1,
+		"ssl":	{
+			"ssl_cert_user_specname":	"CERTIFICATE_USER",
+			"ssl_dh_size":	null,
+			"ssl_issuer_list":	[],
+			"ssl_password":	null,
+			"ssl_rand_egd":	null,
+			"ssl_rand_file":	null,
+			"ssl_require_client_cert":	null,
+			"ssl_server_ciphers":	null,
+			"ssl_server_identity":	null,
+			"ssl_server_key":	null,
+			"ssl_trusted_list":	[],
+			"ssl_use_cert_username":	null
+		},
+		"statistics":	true,
+		"statistics_cleanup_interval":	30,
+		"store":	"store",
+		"track_correlation_ids":	null,
+		"track_message_ids":	null,
+		"locally_modified":	"2017-05-19 08:22:43.367"
+	},
+	"tibrvcm":	[],
+	"topics":	[],
+	"transports":	[],
+	"users":	[{
+			"description":	"Administrator",
+			"name":	"admin",
+			"password":	""
+		}]
+}
